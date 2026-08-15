@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "antigravity",
+  "version": "1.0-SNAPSHOT",
+  "name": "Antigravity",
+  "description": "Antigravity utility mod",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/antigravity/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.cheetahv2.antigravity.client.AntigravityDataGenerator"
+    ],
+    "client": [
+      "org.cheetahv2.antigravity.client.AntigravityClient"
+    ],
+    "main": [
+      "org.cheetahv2.antigravity.Antigravity"
+    ]
+  },
+  "mixins": [
+    "antigravity.mixins.json",
+    {
+      "config": "antigravity.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "fabric-api": "*",
+    "minecraft": "1.21.11"
+  }
+}

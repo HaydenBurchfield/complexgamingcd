@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "org.cheetahv2.antigravity.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "EntityGlowMixin",
+    "HandledScreenAccessor",
+    "InGameHudActionBarMixin",
+    "MouseLockMixin",
+    "MouseAutoClickMixin",
+    "MinecraftClientAutoClickMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
